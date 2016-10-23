@@ -5,8 +5,9 @@ $(function(){
      method: 'GET',
      data: '',
      dataType: 'JSONP'
-   })
-
-   console.log('AJAX request sent.');
+   }).done(function(response){
+        var socialJSON = response;
+        var socialList = socialJSON["social"];
+      })
     })
   })
