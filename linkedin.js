@@ -6,8 +6,7 @@ $(function(){
      data: '',
      dataType: 'JSONP'
    }).done(function(response){
-        var socialJSON = response;
-        var socialList = socialJSON["social"];
+      console.log(response);
       })
     })
   })
