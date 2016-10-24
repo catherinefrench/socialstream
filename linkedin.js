@@ -1,6 +1,5 @@
 $(document).ready(function() { //ready's document
 
- i = 0
 
  $('#facebook').click(function(){ //ajax request for Facebook feed
    $.ajax({
@@ -12,12 +11,12 @@ $(document).ready(function() { //ready's document
       console.log(responseData);
     responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
 
-           $('body').append($('<br><div class = "fb-feed'  + i + '" > <br>').text(feed.channel));
-           $('body').append($('<div class = "from_now'  + i + '" > ').text(feed.from_now));
-           $('body').append($('<div class = "date'  + i + '" > ').text(feed.date));
-           $('body').append($('<div class = "title'  + i + '" > ').text(feed.title));
-           $('body').append($('<div class = "link'  + i + '" > ').text(feed.link));
-           i = i + 1
+           $('body').append($('<br><div class = "fb-feed" > <br>').text(feed.channel));
+           $('body').append($('<div class = "fb-from_now" > ').text(feed.from_now));
+           $('body').append($('<div class = "fb-date" > ').text(feed.date));
+           $('body').append($('<div class = "fb-title" > ').text(feed.title));
+           $('body').append($('<div class = "fb-link" > ').text(feed.link));
+            
       });
     });
   });
