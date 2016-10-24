@@ -16,7 +16,7 @@ $(document).ready(function() { //ready's document
            $('body').append($('<div class = "fb-date" > ').text(feed.date));
            $('body').append($('<div class = "fb-title" > ').text(feed.title));
            $('body').append($('<div class = "fb-link" > ').text(feed.link));
-            
+
       });
     });
   });
@@ -38,7 +38,6 @@ $(document).ready(function() { //ready's document
            $('body').append($('<div class = "twitter-link">').text(feed.link));
            $('body').append($('<div class = "twitter-favorites">').text(feed.favorites));
            $('body').append($('<div class = "twitter-retweets">').text(feed.retweets));
-           // $('body').append($('<div class = "user'  + i + '" > ').text(feed.user));
            $('body').append($('<div class = "twitter-user-id">').text(feed.user.id)); //appends to id in user hash in feed hash
            $('body').append($('<div class = "twitter-user-name">').text(feed.user.name));
            $('body').append($('<div class = "twitter-user-screen_name">').text(feed.user.screen_name));
