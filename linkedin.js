@@ -85,7 +85,7 @@ $(document).ready(function() { //ready's document
               $('#youtube-stream-feed').append($('<div class = "youtube-description" > ').text(feed.description));
               // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
 
-              //<iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
+              // var youtubeLink = <iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
 
 
               // var youtubeLink = ('<iframe width="420" height="315" src="' & feed.link & '" frameborder="0" allowfullscreen></iframe>');
