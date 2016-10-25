@@ -32,11 +32,6 @@
   padding-bottom: 50px;
 }
 
-.youtube-title {
-  color: black;
-  font-weight: bold;
-}
-
 #facebook-stream-feed {
   width: 50%;
   margin-left: auto;
@@ -93,7 +88,8 @@
   color: #167ac6;
   font-size: 15px;
   padding-top: 20px;
-}
+  font-weight: bold;
+} 
 
 .youtube-from_now {
   color: #555; /* matches to YouTube's grey for from_nows*/
