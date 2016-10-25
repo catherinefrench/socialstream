@@ -45,6 +45,10 @@
   padding: 30px;
 }
 
+.fb-from_now {
+  color: #90949c; /* matches to FB's grey in from_now's*/
+}
+
 #twitter-stream-feed {
   width: 50%;
   margin-left: auto;
@@ -61,9 +65,9 @@
   font-weight: bold;
   display: inline-block;
 }
-
+/**/
 .twitter-user-screen-name {
-  color: grey;
+  color: #8899a6; /* matches to Twitter's grey in usernames*/
   display: inline-block;
 }
 

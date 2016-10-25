@@ -11,10 +11,10 @@ $(document).ready(function() { //ready's document
       console.log(responseData);
     responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
 
-           $('#facebook-stream-feed').append($('<br><div class = "fb-feed" > <br>').text(feed.channel));
+          //  $('#facebook-stream-feed').append($('<br><div class = "fb-feed" > <br>').text(feed.channel));
+          //  $('#facebook-stream-feed').append($('<div class = "fb-date" > ').text(feed.date));
+           $('#facebook-stream-feed').append($('<br><div class = "fb-title" > ').text(feed.title));
            $('#facebook-stream-feed').append($('<div class = "fb-from_now" > ').text(feed.from_now));
-           $('#facebook-stream-feed').append($('<div class = "fb-date" > ').text(feed.date));
-           $('#facebook-stream-feed').append($('<div class = "fb-title" > ').text(feed.title));
            $('#facebook-stream-feed').append($('<div class = "fb-link" > ').text(feed.link));
 
       });
