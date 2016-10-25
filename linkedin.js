@@ -21,7 +21,6 @@ $(document).ready(function() { //ready's document
           //  var fbId = feed.id;
           //  console.log(fbId);
 
-
       });
     });
   });
@@ -48,7 +47,7 @@ $(document).ready(function() { //ready's document
 
            $('#twitter-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
            $('#twitter-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
-  
+
        });
      });
    });
@@ -70,8 +69,6 @@ $(document).ready(function() { //ready's document
                var youtubeVid = feed.link.replace("watch?v=", "v/");
 
                $('<iframe>').attr('class', 'youtube-video-link').attr('src', youtubeVid).appendTo('#youtube-stream-feed') // defines what item to make (iFrame in this case), uses attribute method and makes class, then creates source within iframe where the source is the link, then appends to the div."
-
-
 
         });
       });
