@@ -11,11 +11,11 @@ $(document).ready(function() { //ready's document
       console.log(responseData);
     responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
 
-           $('body').append($('<br><div class = "fb-feed" > <br>').text(feed.channel));
-           $('body').append($('<div class = "fb-from_now" > ').text(feed.from_now));
-           $('body').append($('<div class = "fb-date" > ').text(feed.date));
-           $('body').append($('<div class = "fb-title" > ').text(feed.title));
-           $('body').append($('<div class = "fb-link" > ').text(feed.link));
+           $('#social-stream-feed').append($('<br><div class = "fb-feed" > <br>').text(feed.channel));
+           $('#social-stream-feed').append($('<div class = "fb-from_now" > ').text(feed.from_now));
+           $('#social-stream-feed').append($('<div class = "fb-date" > ').text(feed.date));
+           $('#social-stream-feed').append($('<div class = "fb-title" > ').text(feed.title));
+           $('#social-stream-feed').append($('<div class = "fb-link" > ').text(feed.link));
 
       });
     });
@@ -32,16 +32,17 @@ $(document).ready(function() { //ready's document
      responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
       //  var responseJSON = responseData;
 
-          $('body').append($('<br><div class = "twitter-feed">').text(feed.channel));
-           $('body').append($('<div class = "twitter-title">').text(feed.title));
-           $('body').append($('<div class = "twitter-from_now">').text(feed.from_now));
-           $('body').append($('<div class = "twitter-link">').text(feed.link));
-           $('body').append($('<div class = "twitter-favorites">').text(feed.favorites));
-           $('body').append($('<div class = "twitter-retweets">').text(feed.retweets));
-           $('body').append($('<div class = "twitter-user-id">').text(feed.user.id)); //appends to id in user hash in feed hash
-           $('body').append($('<div class = "twitter-user-name">').text(feed.user.name));
-           $('body').append($('<div class = "twitter-user-screen_name">').text(feed.user.screen_name));
-           $('body').append($('<div class = "twitter-user-image">').text(feed.user.image));
+          $('#social-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
+           $('#social-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
+           $('#social-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
+           $('#social-stream-feed').append($('<div class = "twitter-link">').text(feed.link));
+           $('#social-stream-feed').append($('<div class = "twitter-favorites">').text(feed.favorites));
+           $('#social-stream-feed').append($('<div class = "twitter-retweets">').text(feed.retweets));
+           $('#social-stream-feed').append($('<div class = "twitter-user-id">').text(feed.user.id)); //appends to id in user hash in feed hash
+           $('#social-stream-feed').append($('<div class = "twitter-user-name">').text(feed.user.name));
+           $('#social-stream-feed').append($('<div class = "twitter-user-screen_name">').text(feed.user.screen_name));
+           $('#social-stream-feed').append($('<div class = "twitter-user-image">').text(feed.user.image));
+
 
        });
      });
@@ -56,17 +57,18 @@ $(document).ready(function() { //ready's document
      }).done(function(responseData){
         console.log(responseData);
       responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
-              $('body').append($('<br><div class = "youtube-twitter-feed" > <br>').text(feed.channel));
-              $('body').append($('<div class = "youtube-title" > ').text(feed.title));
-              $('body').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
-              $('body').append($('<div class = "youtube-link" > ').text(feed.link));
-              $('body').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
-              $('body').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.medium));
-              $('body').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.high));
+              // $('#social-stream-feed').append($('<br><div class = "youtube-feed" > <br>').text(feed.channel));
+              $('#social-stream-feed').append($('<div class = "youtube-title" > ').text(feed.title));
+              $('#social-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
+              // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
+              var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
+              console.log('ED IS AWESOME');
+              $('#social-stream-feed').append(youtubeLink);
+              $('#social-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
+              $('#social-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.medium));
+              $('#social-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.high));
         });
       });
     });
-
-
 
     });

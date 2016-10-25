@@ -6,19 +6,49 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="linkedin.js" charset="utf-8"></script>
 
+        <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+        <link rel="stylesheet" href="stylesheets/style.css">
   </head>
 
   <body>
-    <div "class = header-top">
-      <h1>WELCOME TO</h1>
-      <h1>SOCIAL STREAM</h1>
-      <h2>By LinkedIn</h2>
+
+    <div class = "header-top">
+      <!-- h1 header -->
+      <h1 class = "h1-header-top">WELCOME TO</h1>
+      <h1 class = "h1-header-top">SOCIAL STREAM</h1>
+      <h2 class = "h2-header-top">By LinkedIn</h2>
+
+      <div class = "buttons">
+         <!-- Buttons for Social Stream feeds -->
+
+        <a class="btn btn-social-icon btn-facebook" id="facebook">
+          <span class="fa fa-facebook"></span>
+        </a>
+
+        <a class="btn btn-social-icon btn-twitter" id="twitter">
+          <span class="fa fa-twitter"></span>
+        </a>
+
+        <a class="btn btn-social-icon btn-youtube" id="youtube">
+          <img src="stylesheets/youtube.png">
+        </a>
+
+      </div>
     </div>
 
-    <div "class = buttons">
-       <button type="button" name="button"  id="facebook">Facebook Stream</button>
-       <button type="button" name="button" id="twitter">Twitter Stream</button>
-       <button type="button" name="button" id="youtube">YouTube Stream</button>
+
+
+    <div id="social-stream-feed">
     </div>
 
   </body>
