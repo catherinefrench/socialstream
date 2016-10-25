@@ -41,7 +41,8 @@ $(document).ready(function() { //ready's document
           // $('#twitter-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
           $('#twitter-stream-feed').append($('<br><div class = "twitter-user-name">').text(feed.user.name));
 
-          var twitterUserScreenName = (' @' + feed.user.name);  // stores twitter user's screen name with an @ preceding it to var
+          var twitterUserScreenName = "<div class = 'twitter-user-screen-name'> @" + feed.user.name + "</div>";  // stores twitter user's screen name with an @ preceding it to var
+
           $('#twitter-stream-feed').append(twitterUserScreenName);
                  // appends twitterUserScreenName to feed
 
@@ -83,8 +84,15 @@ $(document).ready(function() { //ready's document
               $('#youtube-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
               $('#youtube-stream-feed').append($('<div class = "youtube-description" > ').text(feed.description));
               // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
+
+              //<iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
+
+
+              // var youtubeLink = ('<iframe width="420" height="315" src="' & feed.link & '" frameborder="0" allowfullscreen></iframe>');
+                // console.log(feed.link);
               var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
-                console.log('Q4 IS AWESOME');
+                 console.log('Q4 IS AWESOME');
+
               $('#youtube-stream-feed').append(youtubeLink);
 
               // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
