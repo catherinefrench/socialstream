@@ -1,0 +1,12 @@
+#facebook-stream-feed {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e2e2e2;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.fb-from_now {
+  color: #90949c; /* matches to FB's grey in from_now's*/
+}
