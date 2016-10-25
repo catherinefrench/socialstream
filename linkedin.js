@@ -96,14 +96,8 @@ $(document).ready(function() { //ready's document
 
               $('#youtube-stream-feed').append(youtubeLink);
 
-              // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
-              // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.medium));
-              // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.high));
         });
       });
     });
 
     });
-    //
-    //
-    // <iframe width="492" height="277" src="https://www.youtube.com/embed/hAuVczjlolA" frameborder="0" allowfullscreen></iframe>
