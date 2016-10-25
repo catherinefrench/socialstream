@@ -67,6 +67,10 @@
   display: inline-block;
 }
 
+.twitter-from_now {
+  color: grey;
+}
+
 #youtube-stream-feed {
   width: 50%;
   margin-left: auto;

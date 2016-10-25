@@ -42,13 +42,13 @@ $(document).ready(function() { //ready's document
 
            $('#twitter-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
            $('#twitter-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
-           $('#twitter-stream-feed').append($('<div class = "twitter-link">').text(feed.link));
-           $('#twitter-stream-feed').append($('<div class = "twitter-favorites">').text(feed.favorites));
-           $('#twitter-stream-feed').append($('<div class = "twitter-retweets">').text(feed.retweets));
-           $('#twitter-stream-feed').append($('<div class = "twitter-user-id">').text(feed.user.id)); //appends to id in user hash in feed hash
+          //  $('#twitter-stream-feed').append($('<div class = "twitter-link">').text(feed.link));
+          //  $('#twitter-stream-feed').append($('<div class = "twitter-favorites">').text(feed.favorites));
+          //  $('#twitter-stream-feed').append($('<div class = "twitter-retweets">').text(feed.retweets));
+          //  $('#twitter-stream-feed').append($('<div class = "twitter-user-id">').text(feed.user.id));
 
 
-           $('#twitter-stream-feed').append($('<div class = "twitter-user-image">').html(feed.user.image));
+          //  $('#twitter-stream-feed').append($('<div class = "twitter-user-image">').html(feed.user.image));
 
 
 //           $('#twitter-user-image').wrap($('<a>',{
