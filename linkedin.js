@@ -90,7 +90,8 @@ $(document).ready(function() { //ready's document
 
               // var youtubeLink = ('<iframe width="420" height="315" src="' & feed.link & '" frameborder="0" allowfullscreen></iframe>');
                 // console.log(feed.link);
-              var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
+              // var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
+                var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
                  console.log('Q4 IS AWESOME');
 
               $('#youtube-stream-feed').append(youtubeLink);
