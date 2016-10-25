@@ -13,9 +13,14 @@ $(document).ready(function() { //ready's document
 
           //  $('#facebook-stream-feed').append($('<br><div class = "fb-feed" > <br>').text(feed.channel));
           //  $('#facebook-stream-feed').append($('<div class = "fb-date" > ').text(feed.date));
-           $('#facebook-stream-feed').append($('<br><div class = "fb-title" > ').text(feed.title));
+           $('#facebook-stream-feed').append($('<br><div class = "fb-title" > ').html(feed.title));
            $('#facebook-stream-feed').append($('<div class = "fb-from_now" > ').text(feed.from_now));
            $('#facebook-stream-feed').append($('<div class = "fb-link" > ').text(feed.link));
+          //  $('#facebook-stream-feed').append($('<div class = "fb-link" > ').text(feed.id));
+           //
+          //  var fbId = feed.id;
+          //  console.log(fbId);
+ 
 
       });
     });
