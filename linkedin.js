@@ -32,15 +32,18 @@ $(document).ready(function() { //ready's document
      responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
       //  var responseJSON = responseData;
 
-          $('#twitter-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
+
+          // $('#twitter-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
+          $('#twitter-stream-feed').append($('<div class = "twitter-user-name">').text(feed.user.name));
+          $('#twitter-stream-feed').append($('<div class = "twitter-user-screen-name">').text(feed.user.screen_name));
            $('#twitter-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
            $('#twitter-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
            $('#twitter-stream-feed').append($('<div class = "twitter-link">').text(feed.link));
            $('#twitter-stream-feed').append($('<div class = "twitter-favorites">').text(feed.favorites));
            $('#twitter-stream-feed').append($('<div class = "twitter-retweets">').text(feed.retweets));
            $('#twitter-stream-feed').append($('<div class = "twitter-user-id">').text(feed.user.id)); //appends to id in user hash in feed hash
-           $('#twitter-stream-feed').append($('<div class = "twitter-user-name">').text(feed.user.name));
-           $('#twitter-stream-feed').append($('<div class = "twitter-user-screen_name">').text(feed.user.screen_name));
+
+
            $('#twitter-stream-feed').append($('<div class = "twitter-user-image">').text(feed.user.image));
 
 
@@ -62,7 +65,7 @@ $(document).ready(function() { //ready's document
               $('#youtube-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
               // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
               var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
-              console.log('ED IS AWESOME');
+              // console.log('Q4 IS AWESOME');
               $('#youtube-stream-feed').append(youtubeLink);
               $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
               $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.medium));

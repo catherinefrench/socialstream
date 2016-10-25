@@ -53,6 +53,20 @@
   padding: 30px;
 }
 
+.twitter-title {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.twitter-user-name {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.twitter-user-screen-name {
+  color: grey;
+  display: inline-block;
+}
+
 #youtube-stream-feed {
   width: 50%;
   margin-left: auto;
