@@ -1,24 +1,31 @@
 .header-top {
 
   background-color:black;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   height: 600px;
   width: 100%;
   text-align: center;
   background-image: url("images/WhereHaveAllTheGreyPeopleGone.png");
-    /*background-image: url("paper.gif");*/
+
+
 }
 
 .h1-header-top {
 
   color: #FFF;
-  font-family: 'Source Sans Pro', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 70px;
+  font-family: 'Source Sans Pro', sans-serif;
+  /*font-weight: lighter;*/
+  font-size: 100px;
+  padding-top: 50px;
   }
 
 .h2-header-top {
   color: #FFF;
+  padding-top: 30px;
+}
+
+.buttons {
+  padding-top: 60px;
 }
 
 .youtube-title {
