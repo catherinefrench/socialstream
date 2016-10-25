@@ -79,17 +79,22 @@ $(document).ready(function() { //ready's document
         console.log(responseData);
       responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
               // $('#social-stream-feed').append($('<br><div class = "youtube-feed" > <br>').text(feed.channel));
-              $('#youtube-stream-feed').append($('<div class = "youtube-title" > ').text(feed.title));
+              $('#youtube-stream-feed').append($('</br></br><div class = "youtube-title" > ').text(feed.title));
               $('#youtube-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
+              $('#youtube-stream-feed').append($('<div class = "youtube-description" > ').text(feed.description));
               // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
               var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
-              // console.log('Q4 IS AWESOME');
+                console.log('Q4 IS AWESOME');
               $('#youtube-stream-feed').append(youtubeLink);
-              $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
-              $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.medium));
-              $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.high));
+
+              // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.default));
+              // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.medium));
+              // $('#youtube-stream-feed').append($('<div class = "youtube-thumbnails" > ').text(feed.thumbnails.high));
         });
       });
     });
 
     });
+    //
+    //
+    // <iframe width="492" height="277" src="https://www.youtube.com/embed/hAuVczjlolA" frameborder="0" allowfullscreen></iframe>
