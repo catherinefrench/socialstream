@@ -83,21 +83,12 @@ $(document).ready(function() { //ready's document
               $('#youtube-stream-feed').append($('<div class = "youtube-title" > ').text(feed.title));
               $('#youtube-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
               $('#youtube-stream-feed').append($('<div class = "youtube-description" </br>> ').text(feed.description));
-              // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
 
-              // var youtubeLink = <iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
+               var youtubeVid = feed.link.replace("watch?v=", "v/");
+
+               $('<iframe>').attr('class', 'video-link').attr('src', youtubeVid).appendTo('#youtube-stream-feed') // defines what item to make (iFrame in this case), uses attribute method and makes class, then creates source within iframe where the source is the link, then appends to the div."
 
 
-              // var youtubeLink = ('<iframe width="420" height="315" src="' & feed.link & '" frameborder="0" allowfullscreen></iframe>');
-                // console.log(feed.link);
-              // var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
-                // var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
-                 console.log('Q4 IS AWESOME');
-                 var youtubeVid = feed.link.replace("watch?v=", "v/");
-
-                 $('<iframe>').attr('class', 'video-link').attr('src', youtubeVid).appendTo('#youtube-stream-feed') // defines what item to make (iFrame in this case), uses attribute method and makes class, then creates source within iframe where the source is the link, then appends to the div."
-
-              // $('#youtube-stream-feed').append(youtubeLink);
 
         });
       });
