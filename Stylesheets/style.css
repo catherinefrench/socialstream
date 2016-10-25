@@ -95,11 +95,16 @@
   padding-top: 20px;
 }
 
+.youtube-from_now {
+  color: #555; /* matches to YouTube's grey for from_nows*/
+}
+
+.youtube-video-link {
+  display: inline-block;
+}
+
 .youtube-description {
   color: #555; /* matches to YouTube's grey for descriptions*/
   font-size: 13.5px;
-}
-
-.youtube-from_now {
-  color: #555; /* matches to YouTube's grey for from_nows*/
+  display: inline-block;
 }

@@ -79,14 +79,14 @@ $(document).ready(function() { //ready's document
      }).done(function(responseData){
         console.log(responseData);
       responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
-              // $('#social-stream-feed').append($('<br><div class = "youtube-feed" > <br>').text(feed.channel));
+
               $('#youtube-stream-feed').append($('<div class = "youtube-title" > ').text(feed.title));
               $('#youtube-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
               $('#youtube-stream-feed').append($('<div class = "youtube-description" </br>> ').text(feed.description));
 
                var youtubeVid = feed.link.replace("watch?v=", "v/");
 
-               $('<iframe>').attr('class', 'video-link').attr('src', youtubeVid).appendTo('#youtube-stream-feed') // defines what item to make (iFrame in this case), uses attribute method and makes class, then creates source within iframe where the source is the link, then appends to the div."
+               $('<iframe>').attr('class', 'youtube-video-link').attr('src', youtubeVid).appendTo('#youtube-stream-feed') // defines what item to make (iFrame in this case), uses attribute method and makes class, then creates source within iframe where the source is the link, then appends to the div."
 
 
 
