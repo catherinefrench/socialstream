@@ -10,8 +10,10 @@
 }
 
 .h1-header-top {
+
   color: #FFF;
-  font-family: "Oswald", Arial, sans-serif!important;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 300;
   font-size: 70px;
   }
 
