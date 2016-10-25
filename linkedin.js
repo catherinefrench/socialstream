@@ -91,10 +91,13 @@ $(document).ready(function() { //ready's document
               // var youtubeLink = ('<iframe width="420" height="315" src="' & feed.link & '" frameborder="0" allowfullscreen></iframe>');
                 // console.log(feed.link);
               // var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
-                var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
+                // var youtubeLink = ('<iframe src="' + feed.link + '&output=embed' + '"></iframe>');
                  console.log('Q4 IS AWESOME');
+                 var youtubeVid = feed.link.replace("watch?v=", "v/");
 
-              $('#youtube-stream-feed').append(youtubeLink);
+                 $('<iframe>').attr('class', 'video-link').attr('src', youtubeVid).appendTo('#youtube-stream-feed') // defines what item to make (iFrame in this case), uses attribute method and makes class, then creates source within iframe where the source is the link, then appends to the div."
+
+              // $('#youtube-stream-feed').append(youtubeLink);
 
         });
       });
