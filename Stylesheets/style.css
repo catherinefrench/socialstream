@@ -64,6 +64,7 @@
 .twitter-user-name {
   font-weight: bold;
   display: inline-block;
+  color: #008cc9;
 }
 /**/
 .twitter-user-screen-name {
@@ -72,7 +73,7 @@
 }
 
 .twitter-from_now {
-  color: grey;
+  color: #8899a6;
 }
 
 #youtube-stream-feed {

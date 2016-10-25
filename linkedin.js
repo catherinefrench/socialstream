@@ -20,7 +20,7 @@ $(document).ready(function() { //ready's document
            //
           //  var fbId = feed.id;
           //  console.log(fbId);
- 
+
 
       });
     });
@@ -41,7 +41,7 @@ $(document).ready(function() { //ready's document
           // $('#twitter-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
           $('#twitter-stream-feed').append($('<br><div class = "twitter-user-name">').text(feed.user.name));
 
-          var twitterUserScreenName = ('@' + feed.user.name);  // stores twitter user's screen name with an @ preceding it to var
+          var twitterUserScreenName = (' @' + feed.user.name);  // stores twitter user's screen name with an @ preceding it to var
           $('#twitter-stream-feed').append(twitterUserScreenName);
                  // appends twitterUserScreenName to feed
 
