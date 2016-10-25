@@ -48,24 +48,7 @@ $(document).ready(function() { //ready's document
 
            $('#twitter-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
            $('#twitter-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
-          //  $('#twitter-stream-feed').append($('<div class = "twitter-link">').text(feed.link));
-          //  $('#twitter-stream-feed').append($('<div class = "twitter-favorites">').text(feed.favorites));
-          //  $('#twitter-stream-feed').append($('<div class = "twitter-retweets">').text(feed.retweets));
-          //  $('#twitter-stream-feed').append($('<div class = "twitter-user-id">').text(feed.user.id));
-
-
-          //  $('#twitter-stream-feed').append($('<div class = "twitter-user-image">').html(feed.user.image));
-
-
-//           $('#twitter-user-image').wrap($('<a>',{
-//   href: feed.user.image
-// }));
-          //
-          // <'div class = "twitter-user-image">').html(feed.user.image));
-
-          //  $('.div_imagetranscrits').html('<img src="get_image_probes_via_ajax.pl?id_project=xxx" />')
-
-
+  
        });
      });
    });
