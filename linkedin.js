@@ -35,7 +35,12 @@ $(document).ready(function() { //ready's document
 
           // $('#twitter-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
           $('#twitter-stream-feed').append($('<div class = "twitter-user-name">').text(feed.user.name));
-          $('#twitter-stream-feed').append($('<div class = "twitter-user-screen-name">').text(feed.user.screen_name));
+
+          var twitterUserScreenName = ('@' + feed.user.name);
+          // stores twitter user's screen name with an @ preceding it to var
+          $('#twitter-stream-feed').append(twitterUserScreenName);
+          // appends twitterUserScreenName to feed
+
            $('#twitter-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
            $('#twitter-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
            $('#twitter-stream-feed').append($('<div class = "twitter-link">').text(feed.link));
