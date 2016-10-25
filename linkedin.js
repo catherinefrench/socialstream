@@ -34,12 +34,11 @@ $(document).ready(function() { //ready's document
 
 
           // $('#twitter-stream-feed').append($('<br><div class = "twitter-feed">').text(feed.channel));
-          $('#twitter-stream-feed').append($('<div class = "twitter-user-name">').text(feed.user.name));
+          $('#twitter-stream-feed').append($('<br><div class = "twitter-user-name">').text(feed.user.name));
 
-          var twitterUserScreenName = ('@' + feed.user.name);
-          // stores twitter user's screen name with an @ preceding it to var
+          var twitterUserScreenName = ('@' + feed.user.name);  // stores twitter user's screen name with an @ preceding it to var
           $('#twitter-stream-feed').append(twitterUserScreenName);
-          // appends twitterUserScreenName to feed
+                 // appends twitterUserScreenName to feed
 
            $('#twitter-stream-feed').append($('<div class = "twitter-title">').text(feed.title));
            $('#twitter-stream-feed').append($('<div class = "twitter-from_now">').text(feed.from_now));
@@ -49,7 +48,16 @@ $(document).ready(function() { //ready's document
            $('#twitter-stream-feed').append($('<div class = "twitter-user-id">').text(feed.user.id)); //appends to id in user hash in feed hash
 
 
-           $('#twitter-stream-feed').append($('<div class = "twitter-user-image">').text(feed.user.image));
+           $('#twitter-stream-feed').append($('<div class = "twitter-user-image">').html(feed.user.image));
+
+
+//           $('#twitter-user-image').wrap($('<a>',{
+//   href: feed.user.image
+// }));
+          //
+          // <'div class = "twitter-user-image">').html(feed.user.image));
+
+          //  $('.div_imagetranscrits').html('<img src="get_image_probes_via_ajax.pl?id_project=xxx" />')
 
 
        });
