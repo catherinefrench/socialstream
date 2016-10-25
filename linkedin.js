@@ -80,9 +80,9 @@ $(document).ready(function() { //ready's document
         console.log(responseData);
       responseData.forEach(function(feed){ //For each object, appends its attributes to body and adds class name
               // $('#social-stream-feed').append($('<br><div class = "youtube-feed" > <br>').text(feed.channel));
-              $('#youtube-stream-feed').append($('</br></br><div class = "youtube-title" > ').text(feed.title));
+              $('#youtube-stream-feed').append($('<div class = "youtube-title" > ').text(feed.title));
               $('#youtube-stream-feed').append($('<div class = "youtube-from_now" > ').text(feed.from_now));
-              $('#youtube-stream-feed').append($('<div class = "youtube-description" > ').text(feed.description));
+              $('#youtube-stream-feed').append($('<div class = "youtube-description" </br>> ').text(feed.description));
               // $('#social-stream-feed').append($('<div class = "youtube-link" > ').text(feed.link));
 
               // var youtubeLink = <iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
